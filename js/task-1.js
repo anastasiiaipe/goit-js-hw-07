@@ -3,8 +3,9 @@
 const items = document.querySelectorAll("li.item");
 console.log("Number od categories: " + items.length);
 
-const categories = items.querySelector("h2").textContent;
-console.log(items);
-
-const liItems = item.querySelectorAll("ul>li");
-console.log(liItems);
+items.forEach((item) => {
+  const categoryName = item.querySelector("h2").textContent;
+  const categoryElements = item.querySelectorAll("ul li");
+  console.log("Category: " + categoryName);
+  console.log("Elements: " + categoryElements.length);
+});
