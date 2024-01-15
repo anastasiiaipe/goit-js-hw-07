@@ -32,7 +32,7 @@ const gallary = document.querySelector(".gallery");
 const imagesList = images
   .map(
     (image) => `
-  <li class="list-item">
+  <li class="gallery-item">
     <img src="${image.url}" alt="${image.alt}" width="360" height="300"/>
   </li>
 `
